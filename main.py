@@ -13,7 +13,7 @@ def main():
     current_plot_cell.set_value(get_plot_count())
 
     last_updated_cell = sheet.get_range_from_a1(a1_notification='B2')
-    last_updated_cell.set_value(datetime.now().strftime().isoformat())
+    last_updated_cell.set_value(datetime.now().isoformat())
 
 def get_plot_count():
     return 5
